@@ -1,15 +1,15 @@
 package academy.belhard;
 
-import entity.Person;
-import entity.User;
+import academy.belhard.entity.Person;
+import academy.belhard.entity.User;
 
 public class Main {
 
     public static void main(String[] args) {
         Person person1=new Person("Matt", "Damon");
         Person person2=new Person("George", "Clooney");
-        User person3=new User("Tom","Hardy","tomhardy@tuut.by","150977");
-        User person4=new User("Brad","Pitt","bradpitt@tuut.by","181263");
+        User person3=new User("Tom","Hardy","tomhardy@tut.by","150977");
+        User person4=new User("Brad","Pitt","bradpitt@tut.by","181263");
 
         System.out.println(person1.getFullName());
         System.out.println(person2.getFullName());
@@ -17,9 +17,8 @@ public class Main {
         System.out.println(person3.getFullInfo());
         System.out.println(person4.getFullInfo());
 
-
-
-
+        System.out.println(person3.isPasswordCorrect("555555"));
+        System.out.println(person4.isPasswordCorrect("181263"));
 
     }
 }
@@ -31,13 +30,13 @@ public class Main {
 //    и сделайте коммит
 //       2 Создайте корневой пэкедж (если он был сгенерирован автоматически, то переименуйте его в academy.belhard),
 //        перенесите в него класс Main (класс, в котором находится метод main)
-//      3 Внутри этого пэкеджа создайте пэкедж под названием entity (щелчок ПКМ по корневому пэкеджу -> New -> Packege)
-//        Внутри пэкеджа entity создайте класс Person
+//      3 Внутри этого пэкеджа создайте пэкедж под названием academy.belhard.entity (щелчок ПКМ по корневому пэкеджу -> New -> Packege)
+//        Внутри пэкеджа academy.belhard.entity создайте класс Person
 //      4  Создайте 2 поля класса Person с названиями firstName и lastName типа String и модификаторами доступа protected
 //       5 Создайте в классе Person конструктор с 2-мя аргументами (для обоих полей класса) и модификатором доступа public
 //      6  Создайте в классе Person метод под названием getFullName с типом возвращаемого значения String и модификатором
 // доступа public. Этот метод должен склеивать имя и фамилию через пробел и возвращать это значение
-//      7  Создайте класс User (внутри пэкеджа entity), который будет являться дочерним классом по отношению к
+//      7  Создайте класс User (внутри пэкеджа academy.belhard.entity), который будет являться дочерним классом по отношению к
 //        классу Person
 //      8  В классе User создайте 2 поля email и password типа String и с модификаторами доступа типа private
 //      9  В классе User создайте конструктор, который принимает 2 поля класса Person и 2 поля класса User - всего 4 аргумента

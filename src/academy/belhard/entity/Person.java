@@ -1,4 +1,4 @@
-package entity;
+package academy.belhard.entity;
 
 public class Person {
     protected String firstName;
