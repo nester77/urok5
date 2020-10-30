@@ -1,9 +1,26 @@
 package academy.belhard;
 
+import entity.Person;
+import entity.User;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Person person1=new Person("Matt", "Damon");
+        Person person2=new Person("George", "Clooney");
+        User person3=new User("Tom","Hardy","tomhardy@tuut.by","150977");
+        User person4=new User("Brad","Pitt","bradpitt@tuut.by","181263");
+
+        System.out.println(person1.getFullName());
+        System.out.println(person2.getFullName());
+
+        System.out.println(person3.getFullInfo());
+        System.out.println(person4.getFullInfo());
+
+
+
+
+
     }
 }
 
